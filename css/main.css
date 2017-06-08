@@ -95,7 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-header,
+.header, .intro,
 .navbar-default,
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
@@ -138,6 +138,10 @@ nav {
     padding-top: 32px;
 }
 
+.navbar {
+    margin-bottom: 0;
+}
+
 .navbar-default {
     border-color: #4b5a65;
 }
@@ -164,16 +168,12 @@ nav {
     background-color: #fff;
 }
 
-.intro .left_part {
+.left_part {
     float: left;
 }
 
-.intro .right_part {
+.right_part {
     float: right;
-}
-
-.intro {
-    overflow: hidden;
 }
 
 .right_part h1 {
@@ -211,6 +211,7 @@ nav {
     text-decoration: underline;
 }
 
+
 /*    Media screen    */
 
 
@@ -219,25 +220,34 @@ nav {
         height: 100px;
         padding-top: 1px;
     }
-    .collapse .navbar-right .active_link, .collapse .navbar-right .active_link:hover, .collapse .navbar-right .active_link:focus {
-        background-color: #4b5a65;
-    }
     .intro .left_part {
         display: none;
     }
-    .intro .right_part h1, .reference{
+    .intro .right_part h1, .reference, h4, p{
         text-align: center;
     }
+    .navbar-collapse ul li .toggle-color, .navbar-collapse ul li .toggle-color:hover, .navbar-collapse ul li .toggle-color:focus {
+        background-color: #39434a;
+    }
+    .collapse .navbar-right .active_link {
+        border-radius: 0;
+    }
+    .reference {
+        padding-bottom: 50px;
+    }
+
 
 }
 @media screen and (max-width: 970px) {
     .intro .left_part {
         display: none;
     }
-    .intro .right_part h1, .reference{
+    .intro .right_part h1, .reference, h4, p{
         text-align: center;
     }
-
+    .reference {
+        padding-bottom: 50px;
+    }
 }
 
 
