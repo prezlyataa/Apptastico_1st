@@ -219,7 +219,8 @@ nav {
     background-color: #ebebeb;
     padding: 15px 0;
 }
-.clients_logo {
+
+.clients_logo, .works {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -228,7 +229,8 @@ nav {
 
 .services {
     background-color: #f5f5f5;
-    padding-top: 85px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .services .info_item_1, .services .info_item_2, .services .info_item_3 {
@@ -258,17 +260,30 @@ nav {
     border-radius: 8px;
 }
 
-.news {
-    margin-bottom: 55px;
+.projects {
+    padding-top: 50px;
 }
 
-.news .blog .blog_title, .news .twitter .blog_title {
+.projects .blog_title {
+    padding-left: 14px;
+}
+
+.works {
+    justify-content: center;
+}
+
+.news {
+    margin-bottom: 55px;
+    padding-top: 35px;
+}
+
+.news .blog .blog_title, .news .twitter .blog_title, .projects .blog_title {
     font-size: 20px;
     color: #5d6a74;
     margin-bottom: 15px;
 }
 
-.news .blog .blog_title img, .news .twitter .blog_title img{
+.news .blog .blog_title img, .news .twitter .blog_title img, .projects .blog_title img{
     padding-bottom: 7px;
 }
 
@@ -392,17 +407,31 @@ nav {
     .services_button:last-child {
         margin-bottom: 0;
     }
+    .projects {
+        padding-top: 20px;
+    }
+    .projects .works img {
+        width: 185px;
+        height: 135px;
+    }
+    .news {
+        padding-top: 20px;
+    }
     .news .blog .acticle .acticle_img {
         width: 50%;
     }
     .news .blog .acticle .article_text {
         width: 50%;
     }
-    .twitter {
-        padding-left: 0;
+    .news .twitter {
+        padding-left: 10px;
+        padding-top: 20px;
     }
     .twitter .twitter_post p{
         text-align: left;
+    }
+    .footer {
+        padding: 0 10px;
     }
 }
 @media screen and (max-width: 764px) {
@@ -430,6 +459,9 @@ nav {
     .services {
         background-color: #f5f5f5;
     }
+    .projects {
+        padding-top: 20px;
+    }
     .news .blog .acticle .acticle_img {
         width: 40%;
     }
@@ -441,6 +473,16 @@ nav {
     }
     .twitter .twitter_post p{
         text-align: left;
+    }
+    .news {
+        padding-top: 20px;
+    }
+    .news .twitter {
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+    .footer {
+        padding: 0 10px;
     }
 }
 
